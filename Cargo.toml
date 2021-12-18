@@ -1,0 +1,9 @@
+[package]
+name = "lto-test"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+debug = true
+lto = "thin"
+codegen-units = 1
